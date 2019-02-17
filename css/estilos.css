@@ -1,0 +1,176 @@
+/* Variables nativas */
+:root {
+  --blanco: #fff;
+  --gris-borde: #3d3d3d;
+  --gris-footer: #999;
+  --gris-nav: #141414;
+  --negro: #000;
+  --rojo: #e50914;
+  --rojo-intenso: red;
+}
+
+/* Reset css */
+* {
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--negro);
+  background-image: url('../img/mosaic.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.75);
+  display: grid;
+  grid-template-rows: 10vh 80vh 20vh 70vh 40vh;
+  width: 100vw;
+}
+
+.header {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 55vw 45vw;
+}
+
+.logo {
+  justify-self: end;
+  width: 30%;
+}
+
+.boton-iniciar-sesion,
+.boton-unirte-ahora {
+  background-color: var(--rojo);
+  border-radius: 3px;
+  color: var(--blanco);
+  font-weight: 300;
+}
+
+.boton-iniciar-sesion {
+  height: 5vh;
+  justify-self: end;
+  line-height: normal;
+  margin: 16px 10px;
+  padding: 4px 17px;
+  width: 26%;
+}
+
+.section {
+  line-height: 5.3em;
+  margin: 6em 0;
+  text-align: center;
+  width: 100vw;
+}
+
+h1,
+h2,
+.nav a,
+.svg-icon,
+p {
+  color: var(--blanco);
+}
+
+h2 {
+  font-size: 4em;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+h1,
+.boton-unirte-ahora {
+  text-transform: uppercase;
+}
+
+.section .boton-unirte-ahora {
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  padding: 1.1em 3em;
+}
+
+.nav {
+  background-color: var(--gris-nav);
+  border-bottom: 2px solid var(--gris-borde);
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav a {
+  font-size: 0.8em;
+  padding: 0.5em 2.2em 0 2.2em;
+  text-align: center;
+  width: 22%;
+}
+
+.active {
+  border-bottom: 3px solid var(--rojo);
+}
+
+.svg-icon {
+  margin: 0.5em 0;
+  width: 20%;
+}
+
+.article {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 35vw);
+  justify-content: space-around;
+  line-height: 1.5em;
+  padding: 1em 7em 7em 7em;
+}
+
+.article p {
+  font-weight: 400;
+}
+
+.article .boton-unirte-ahora {
+  font-size: 0.7em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+}
+
+.imagen-cancelar {
+  width: 90%;
+}
+
+.footer {
+  align-self: end;
+  display: grid;
+  grid-template-rows: 20vh 10vh;
+  padding: 1em 7em;
+}
+
+.footer,
+.footer p,
+.footer a {
+  color: var(--gris-footer);
+}
+
+.footer p,
+.footer a {
+  font-size: 0.7em;
+}
+
+/* Efectos */
+.boton-iniciar-sesion:hover,
+.boton-unirte-ahora:hover {
+  background-color: var(--rojo-intenso);
+}
+
+.nav a:hover {
+  color: var(--gris-footer);
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
