@@ -9,7 +9,7 @@
   --rojo-intenso: red;
 }
 
-/* Reset css */
+/* Reset css (También se puede usar la librería normalize.css) */
 * {
   box-sizing: border-box;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -29,7 +29,7 @@ body {
 .container {
   background-color: rgba(0, 0, 0, 0.75);
   display: grid;
-  grid-template-rows: 10vh 80vh 20vh 70vh 40vh;
+  grid-template-rows: 8vh 80vh 20vh 70vh 40vh;
   width: 100vw;
 }
 
@@ -41,24 +41,25 @@ body {
 
 .logo {
   justify-self: end;
-  width: 30%;
+  width: 25%;
 }
 
 .boton-iniciar-sesion,
 .boton-unirte-ahora {
   background-color: var(--rojo);
-  border-radius: 3px;
+  border-radius: 0.25em;
   color: var(--blanco);
   font-weight: 300;
 }
 
 .boton-iniciar-sesion {
+  font-size: 0.8em;
   height: 5vh;
   justify-self: end;
   line-height: normal;
   margin: 16px 10px;
   padding: 4px 17px;
-  width: 26%;
+  width: 23%;
 }
 
 .section {
@@ -158,10 +159,10 @@ h1,
 
 .footer p,
 .footer a {
-  font-size: 0.7em;
+  font-size: 0.6em;
 }
 
-/* Efectos */
+/* Efectos estado hover en botones */
 .boton-iniciar-sesion:hover,
 .boton-unirte-ahora:hover {
   background-color: var(--rojo-intenso);
